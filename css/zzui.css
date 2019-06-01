@@ -1,0 +1,69 @@
+/* 文章模块样式 */
+.zzarticle{
+	background-color: white;
+	margin-top:10px;
+	padding:10px;
+}
+.zzarticle:hover{
+	box-shadow: white 2px 2px 50px;
+}
+.zzarticle>header{
+	overflow: auto;
+}
+.zzarticle>header>.st{
+	position: relative;
+	float: left;
+}
+.zzarticle>header>.st>span{
+	background-color: orangered;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.zzarticle>header>.st>div{
+	width: 10px;
+	height: 10px;
+	background-color: orangered;
+	position: absolute;
+	right:-3px;
+	top:5px;
+	transform: rotate(50deg);
+}
+.zzarticle>header>h3{
+	margin-left:10px;
+	float: left;
+}
+.zzarticle>section{
+	margin-top:10px;
+	overflow: auto;
+}
+.zzarticle>section>img{
+	max-width: 100px;
+	float: left;
+	margin-right:5px;
+}
+.zzarticle>footer{
+	text-align: right;
+}
+.zzarticle>footer .commentCount{
+	color:hsl(212, 72%, 54%);
+}
+.zzarticle>footer .fabulousCount{
+	color:hotpink;
+}
+
+/* 面板模块样式 */
+.zzpanel{
+	background-color: white;
+	margin-top: 10px;
+	padding: 10px;
+	min-height: 100px;
+}
+.zzpanel .title{
+	color: hsl(212, 72%, 54%);
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+}
+.zzpanel .content{
+	padding-top: 10px;
+}

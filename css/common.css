@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: hsl(240, 0%, 30%);
+	font-size: 15px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color:hsl(212, 72%, 54%);
+	text-decoration:underline;
+}
+h1{
+	font-size: 35px;
+}
+
+header,
+nav,
+section,
+aside,
+article,
+figure,
+figcaption,
+footer,
+hgroup {
+	display: block;
+}
+
+@font-face {
+	font-family: zzfont;
+	src: url("AlexBrush-Regular.ttf");
+}

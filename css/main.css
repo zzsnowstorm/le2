@@ -1,0 +1,278 @@
+#wrapper {
+	background-color: #CCCCCC;
+}
+#wrapper>.toper{
+	position: fixed;
+	z-index: 10;
+	top:0;
+	left:0;
+	right:0;
+}
+#wrapper>.toper>header {
+	position: relative;
+	background-color: hsl(210, 30%, 50%);
+	width: 100%;
+	height: 80px;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+}
+#wrapper>.toper>header img{
+	max-width: 80px;
+	border-radius: 5px;
+	position: absolute;
+	top:50%;
+	left:10px;
+	transform: translateY(-50%);
+	opacity: 0.9;
+}
+#wrapper>.toper>header .logo {
+	font-family: "zzfont";
+	color: white;
+	font-size: 40px;
+}
+
+#wrapper>.toper>header>h1 {
+	color: white;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	margin: auto;
+	transition-duration: 3s;
+	cursor: pointer;
+	text-shadow: black 5px 5px 5px;
+	font-size:25px;
+}
+
+#wrapper>.toper>header>h1:hover {
+	transform: translateX(-30px);
+	left: 10px;
+	text-shadow: purple 2px 2px 50px;
+}
+
+/* 导航栏 */
+#wrapper>.toper>nav {
+	background-color: #595959;
+	height: 50px;
+}
+
+/* 移动端处理 */
+@media (max-width:600px) {
+	#wrapper>.toper>nav {
+		overflow: scroll;
+	}
+}
+
+#wrapper>.toper>nav ul {
+	/* 	border: 1px solid crimson ; */
+	max-width: 960px;
+	min-width: 600px;
+	margin: auto;
+	height: 50px;
+	position: relative;
+}
+
+#wrapper>.toper>nav li {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 5px 10px;
+	max-width: 100px;
+	text-align: center;
+	max-width: 100px;
+
+}
+
+#wrapper>.toper>nav li:hover,
+.item_active {
+	background-color: hsl(220, 100%, 35%);
+}
+
+#wrapper>.toper>nav a {
+	color: white;
+	text-decoration: none;
+}
+
+/* 查找按钮 */
+#wrapper>.toper>nav>ul>button {
+	background-color: transparent;
+	border-width: 0;
+	position: absolute;
+	background-image: url(../img/lookup2.png);
+	background-size: 100% 100%;
+	width: 22px;
+	height: 22px;
+	top: 15px;
+	margin-left: 10px;
+	cursor: pointer;
+	/*手势*/
+}
+
+#wrapper>.toper>nav>ul>button:hover {
+	background-image: url(../img/lookup2_blue.png);
+}
+
+/* 开始正文模块 */
+#wrapper>#container {
+	background-color: #ccc;
+	max-width: 960px;
+	position: relative;
+	display: -moz-box;
+	display: -webkit-box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	margin:auto;
+	margin-top:130px;
+	/* border:1px solid red; */
+}
+
+/* 广告栏 */
+#wrapper>#container>.ad {
+	background-color: #FFFFFF;
+	padding: 5px 10px;
+	position: relative;
+	display: -moz-box;
+	display: -webkit-box;
+}
+
+#wrapper>#container>.ad>img {
+	margin-right: 10px;
+	position: absolute;
+	top: 8px;
+}
+/* 主要内容部分*/
+#wrapper>#container>.ad>marquee {
+	max-width: 900px;
+	margin-left: 25px;
+	display: -moz-box;
+	display: -webkit-box;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+}
+
+#wrapper>#container>.content {
+	display: -moz-box;
+	display: -webkit-box;
+	margin-top:10px;
+}
+#wrapper>#container>.content>section{
+	max-width: 695px;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+}
+/* 图片轮播模块 */
+#wrapper>#container>.content>section .pics{
+	/* background-color: white; */
+}
+#wrapper>#container>.content>section .pics img{
+	width: 100%;
+}
+/* 热门排行 */
+#wrapper>#container>.content>section .weekrank{
+	background-color: white;
+	margin-top:10px;
+	padding: 10px;
+}
+#wrapper>#container>.content>section .weekrank .title{
+	color: hsl(212, 72%, 54%);
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+#wrapper>#container>.content>section .weekrank .art{
+	overflow: auto;
+	margin-top: 10px;
+}
+#wrapper>#container>.content>section .weekrank .art .left{
+	float: left;
+}
+#wrapper>#container>.content>section .weekrank .art .left span{
+	background-color:palevioletred;
+	color:white;
+	padding-left:10px;
+	padding-right: 10px;
+}
+#wrapper>#container>.content>section .weekrank .art:nth-child(2) .left span{
+	background-color:seagreen;
+}
+#wrapper>#container>.content>section .weekrank .art:nth-child(3) .left span{
+	background-color:skyblue;
+}
+#wrapper>#container>.content>section .weekrank .art .right{
+	float:right;
+}
+#wrapper>#container>.content>section .weekrank .art .right span{
+	color:hotpink;
+}
+
+/* 按钮:更多 */
+#wrapper>#container>.content>section .pager{
+	text-align: center;
+	background-color: white;
+	margin-top: 10px;
+	padding:10px;
+}
+#wrapper>#container>.content>section .pager>button{
+	border-width: 0;
+	padding:5px 10px;
+}
+#wrapper>#container>.content>section .pager>button:hover{
+	cursor:pointer;
+}
+/* 侧边栏 */
+/* 侧边 */
+#wrapper>#container>.content>aside{
+	max-width: 260px;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	margin-left: 5px;
+}
+#container .content>aside .share{
+	background-color: white;
+	padding: 10px;
+}
+#container .content>aside .share img{
+	margin-right:10px;
+	cursor: pointer;
+}
+/* 绿色风格标题 */
+#container .content>aside .zzpanel .titleGreen{
+	color:mediumseagreen;
+}
+/* 粉红色风格标题 */
+#container .content>aside .zzpanel .titlePink{
+	color:hotpink;
+}
+/* 标签云 */
+#container .content>aside .zzNoteCloud .content table{
+	width: 100%;
+}
+#container .content>aside .zzNoteCloud .content table tr td{
+	background-color: #3CB371;
+	color:white;
+	padding:5px;
+}
+/* 移动端处理 */
+@media (max-width:430px) {
+	#wrapper>#container>.content>aside{
+		display: none;
+	}
+}
+
+
+
+
+/* 版权模块 */
+#wrapper>footer {
+	background-color: #595959;
+	width: 100%;
+	height: 50px;
+	margin-top:10px;
+}
+#wrapper>footer>section{
+	color:white;
+	max-width: 960px;
+	margin: auto;
+	line-height: 50px;
+}
